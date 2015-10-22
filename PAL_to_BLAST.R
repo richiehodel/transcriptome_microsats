@@ -29,7 +29,7 @@ Input_4 <- subset(Input_3, !duplicated(Input_3$SequenceID))
 Filtered <- Input_4
 
 
-## This section is sorting the differnt motif types
+## This section is sorting the different motif types
 
 Loci2 <- which (Filtered$Repeat.Motif.Size == 2)
 Loci3 <- which (Filtered$Repeat.Motif.Size == 3)
@@ -50,7 +50,7 @@ Prop6 <- 100*(length(Loci6)/Total)
 Motifs <- data.frame(row.names=NULL, Motif=c("2", "3", "4", "5", "6"),
                      Count=c(length(Loci2), length(Loci3), length(Loci4), 
                              length(Loci5), length(Loci6)), Percent=c(Prop2,
-                                                                      Prop3, Prop4, Prop5, Prop6))
+                             Prop3, Prop4, Prop5, Prop6))
 
 
 write.table(Motifs, file="Motif_output.txt", row.names=FALSE, quote=FALSE,
