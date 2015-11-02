@@ -61,7 +61,11 @@ write.table(Coding_Motifs, file="Coding_motif_output.txt", row.names=FALSE, quot
             sep="\t")
 
 
+<<<<<<< Updated upstream
 
 
+=======
+#############################################################################
+>>>>>>> Stashed changes
 
 
